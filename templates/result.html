@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crop Suggestions</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style2.css') }}"
+    />
+  </head>
+  <body>
+    <div class="hero">
+      <h1>Crop Suggestions</h1>
+      <div class="content-wrapper">
+        <!-- Results Section -->
+        <div class="result">
+          <div class="card">
+            <img src="{{ result_image1 }}" alt="Crop Image 1" />
+            <div class="card-content">
+              <h2 class="card-title">
+                {{ result1 if result1 else 'No Crop Suggested' }}
+              </h2>
+              <p class="card-description">
+                {{ description1 if description1 else 'No description available'
+                }}
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="{{ result_image2 }}" alt="Crop Image 2" />
+            <div class="card-content">
+              <h2 class="card-title">
+                {{ result2 if result2 else 'No Crop Suggested' }}
+              </h2>
+              <p class="card-description">
+                {{ description2 if description2 else 'No description available'
+                }}
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="{{ result_image3 }}" alt="Crop Image 3" />
+            <div class="card-content">
+              <h2 class="card-title">
+                {{ result3 if result3 else 'No Crop Suggested' }}
+              </h2>
+              <p class="card-description">
+                {{ description3 if description3 else 'No description available'
+                }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

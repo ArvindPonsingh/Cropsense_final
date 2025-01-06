@@ -1,0 +1,135 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('crop.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin: 20px auto;
+}
+
+/* Hero Title */
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Description Text */
+.hero p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Content Wrapper for Split Layout */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Form Container */
+.form-container {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(247, 247, 247, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+/* Form Labels */
+label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Form Inputs */
+input, select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #444;
+}
+
+/* Result Section */
+.result {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(247, 247, 247, 0.8);
+    border: 1px solid #493d3d;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+/* Cards */
+.card {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Card Images */
+.card img {
+    width: 33%;
+    object-fit: cover;
+    height: auto;
+}
+
+/* Card Content */
+.card-content {
+    padding: 20px;
+    width: 67%;
+}
+
+.card-title {
+    font-size: 1.5em;
+    color: #4CAF50;
+    margin: 0;
+}
+
+.card-description {
+    font-size: 1em;
+    color: #555;
+}

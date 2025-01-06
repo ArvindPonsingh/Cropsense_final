@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sampling Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Sampling Result</h1>
+        <p>Interval: {{ interval }} meters</p>
+        <h2>Averages</h2>
+        <p><strong>Average Nitrogen (N):</strong> {{ avg_nitrogen }}</p>
+        <p><strong>Average Phosphorus (P):</strong> {{ avg_phosphorus }}</p>
+        <p><strong>Average Potassium (K):</strong> {{ avg_potassium }}</p>
+        <p><strong>Average Temperature (°C):</strong> {{ avg_temperature }}</p>
+        <ul>
+            {% for sample in samples %}
+                <li>
+                    <p>Nitrogen (N): {{ sample.Nitrogen }}</p>
+                    <p>Phosphorus (P): {{ sample.Phosporus }}</p>
+                    <p>Potassium (K): {{ sample.Potassium }}</p>
+                    <p>Temperature (°C): {{ sample.Temperature }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="{{ url_for('index') }}">Go Back</a>
+    </div>
+</body>
+</html>

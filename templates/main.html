@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}"
+  />
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Crop Sense</h1>
+        <div class="header-info">
+            <p>Explore modern agriculture techniques! Crop Sense helps you optimize crop yield and resource usage with real-time recommendations and innovative technology.</p>
+        </div>
+        <p>Select an option:</p>
+        <form action="/crop_recommendation" method="GET">
+            <button type="submit">Crop Recommendation</button>
+        </form>
+        <form action="/fertilizer_recommendation" method="GET">
+            <button type="submit">Fertilizer Recommendation</button>
+        </form>
+        <form action="/sampling" method="GET">
+            <button type="submit">Field Sampling</button>
+        </form>
+    </div>
+</body>
+</html>

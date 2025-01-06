@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crop Suggestion</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style2.css') }}"
+    />
+  </head>
+  <body>
+    <div class="hero">
+      <h1>Fertilizer Suggestion</h1>
+      <p>Enter the following details to get a suggested crop:</p>
+      <div class="content-wrapper">
+        <!-- Form Container -->
+        <div class="form-container">
+          <form action="/predict_fertilizer" method="POST">
+            <label for="Nitrogen"><b>Nitrogen :</b></label>
+            <input
+              type="number"
+              step="0.01"
+              min="0"
+              max="1999"
+              id="Nitrogen"
+              name="Nitrogen"
+            /><br /><br />
+
+            <label for="Phosporus"><b>Phosphorus :</b></label>
+            <input
+              type="number"
+              step="0.01"
+              min="0"
+              max="1999"
+              id="Phosporus"
+              name="Phosporus"
+            /><br /><br />
+
+            <label for="Potassium"><b>Potassium :</b></label>
+            <input
+              type="number"
+              step="0.01"
+              min="0"
+              max="1999"
+              id="Potassium"
+              name="Potassium"
+            /><br /><br />
+
+            <label for="Crop"><b>Crop :</b></label>
+            <input
+              type="string"
+              step="1"
+              min="0"
+              max="100"
+              id="Crop"
+              name="Crop"
+              required
+            /><br /><br />
+
+
+            <button type="submit">Get Suggested Crop</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
