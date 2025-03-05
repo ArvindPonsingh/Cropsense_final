@@ -36,7 +36,7 @@ CropSense aims to simplify and enhance decision-making for small-scale farmers, 
 ## 💡 How to Get Started  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/Arunpranav-Rk/Crop-Sense-main-improv.git
+   git clone https://github.com/ArvindPonsingh/Cropsense_final/tree/main
 2.Install Dependencies:
  ```bash
   pip install -r requirements.txt
